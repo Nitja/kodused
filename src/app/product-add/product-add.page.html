@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lisa toode</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="addForm" (ngSubmit)="onSubmit(productAddForm)" #productAddForm="ngForm">
+    <input type="text" name="name" ngModel />
+    <input type="number" name="price" ngModel />
+    <input type="text" name="category" ngModel />
+    <input type="text" name="imageSrc" ngModel />
+    <br>
+    <button type="submit">Lisa</button>
+  </form>
+</ion-content>

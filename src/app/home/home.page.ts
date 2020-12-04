@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  products;
 
   constructor() {}
 
+  ionViewDidEnter() {
+   this.products = JSON.parse(localStorage.getItem("products")) || []; 
+  }
 }
